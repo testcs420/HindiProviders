@@ -26,6 +26,12 @@ open class Kissasianv2 : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
+        "filter?type=1&status=2&country=1&sort=updated?page=" to "Korean Drama",
+        "filter?type=2&status=2&country=1&sort=updated?page=" to "Korean Movies",
+        "filter?type=1&status=2&country=2&sort=updated?page=" to "Japanese Drama",
+        "filter?type=2&status=2&country=2&sort=updated?page=" to "Japanese Movies",
+        "filter?type=1&status=2&country=5&sort=updated?page=" to "Chinese Drama",
+        "filter?type=2&status=2&country=5&sort=updated?page=" to "Chinese Movies",
         "drama-list/ongoing.html?page=" to "Drama Ongoing",
         "drama-list/completed.html?page=" to "Drama Completed",
         "genre/variety/?page=" to "Variety Show",
