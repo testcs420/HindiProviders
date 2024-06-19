@@ -23,11 +23,13 @@ class Kissasian : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
-        "recently-updated" to "Recently Updated",
-        "recently-added" to "Recently Added",
-        "filter?type=1&status=2&country=2&sort=updated?page=" to "Japanese",
-        "filter?type=1&status=2&country=5&sort=updated?page=" to "Chinese",
-        "movie" to "Movies",
+        "drama-list/ongoing.html?page=" to "Drama Ongoing",
+        "filter?type=1&status=2&country=1&sort=updated?page=" to "Korean Drama",
+        "filter?type=2&status=2&country=1&sort=updated?page=" to "Korean Movies",
+        "filter?type=1&status=2&country=2&sort=updated?page=" to "Japanese Drama",
+        "filter?type=2&status=2&country=2&sort=updated?page=" to "Japanese Movies",
+        "filter?type=1&status=2&country=5&sort=updated?page=" to "Chinese Drama",
+        "filter?type=2&status=2&country=5&sort=updated?page=" to "Chinese Movies",
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
